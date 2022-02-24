@@ -1,8 +1,14 @@
 pipeline{
-	agent any
+
+	agent{ label 'spring-boot' } 
+	
 		stages{
-			step("Git Repo and Clean"){
-				echo "cloning"
+			stage('Build with Unit Testing'){
+				steps {
+					script {
+						echo 'building'
+					}
+				}
 			}
 		}
 }
