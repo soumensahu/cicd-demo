@@ -1,5 +1,3 @@
-import cucumber.junit.Cucumber;
-import org.junit.runner.RunWith;
 pipeline{
 
 	agent any
