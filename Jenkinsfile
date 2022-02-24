@@ -1,6 +1,6 @@
 pipeline{
 	agent any
-		stage{
+		stages{
 			step("Git Repo and Clean"){
 				echo "cloning"
 			}
