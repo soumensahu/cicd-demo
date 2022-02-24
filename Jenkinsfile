@@ -1,6 +1,6 @@
 pipeline{
 
-	agent{ label 'spring-boot' } 
+	agent any
 	
 		stages{
 			stage('Build with Unit Testing'){
