@@ -7,6 +7,7 @@ pipeline{
 				steps {
 					script {
 						echo 'building'
+						bat(/mvn clean install/)
 					}
 				}
 			}
