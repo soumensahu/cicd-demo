@@ -10,6 +10,11 @@ pipeline{
 						bat(/mvn clean install/)
 					}
 				}
+				post {
+					success {
+						echo "build successfull and sendng mail"
+					}
+				}
 			}
 			stage('Integration Test'){
 				steps {
