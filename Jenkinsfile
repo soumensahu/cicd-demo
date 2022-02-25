@@ -34,7 +34,7 @@ def sendMail(status){
 	emailext ( 
 	attachLog: true,
 	body: 'testing mail .please dont reply', 
-	subject: 'Build $BUILD_NUMBER - " + status + " (${currentBuild.fullDisplayName})',
+	subject: 'Build+$env.BUILD_NUMBER - " + $status',
 	to: 'soumensahu2011@gmail.com')
 
 }
