@@ -13,6 +13,7 @@ pipeline{
 				post {
 					success {
 						echo "build successfull and sendng mail"
+						sendMail("build successfully")
 					}
 				}
 			}
@@ -27,4 +28,13 @@ pipeline{
 				}
 			}
 		}
+}
+
+def sendMail(status){
+	emailext ( 
+	attachLog: true,
+	body: 'testing mail .please dont reply', 
+	subject: 'Build $BUILD_NUMBER - " + status + " (${currentBuild.fullDisplayName})',
+	to: 'soumensahu2011@gmail.com')
+
 }
