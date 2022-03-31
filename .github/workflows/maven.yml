@@ -24,3 +24,14 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn clean install
+    - name: Login
+      uses: atlassian/gajira-login@master
+      env:
+        JIRA_BASE_URL: ${{https://soumensahu.atlassian.net}}
+        JIRA_USER_EMAIL: ${{ soumensahu2011@gmail.com }}
+        JIRA_API_TOKEN: ${{ GlXpawApToLwwYklFSHSD920 }}
+    - name: Comment on issue
+      uses: atlassian/gajira-comment@master
+      with:
+        issue: JENKINS1-1
+        comment: ${{ github.event.pusher.name }} pushed to repository, comment from github action
