@@ -27,9 +27,9 @@ jobs:
     - name: Login
       uses: atlassian/gajira-login@master
       env:
-        JIRA_BASE_URL: ${{https://soumensahu.atlassian.net}}
-        JIRA_USER_EMAIL: ${{ soumensahu2011@gmail.com }}
-        JIRA_API_TOKEN: ${{ GlXpawApToLwwYklFSHSD920 }}
+        JIRA_BASE_URL: https://soumensahu.atlassian.net
+        JIRA_USER_EMAIL: soumensahu2011@gmail.com
+        JIRA_API_TOKEN: GlXpawApToLwwYklFSHSD920
     - name: Comment on issue
       uses: atlassian/gajira-comment@master
       with:
