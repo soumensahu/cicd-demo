@@ -29,4 +29,4 @@ jobs:
       env:
         JIRA_BASE_URL: https://soumensahu.atlassian.net
         JIRA_USER_EMAIL: soumensahu2011@gmail.com
-        JIRA_API_TOKEN: cAA6rONMD65YFtt7hdr912B9
+        JIRA_API_TOKEN: OcDBthOAVd8T3fog2JTk2C6D
