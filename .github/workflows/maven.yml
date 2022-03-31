@@ -29,7 +29,7 @@ jobs:
       env:
         JIRA_BASE_URL: https://soumensahu.atlassian.net
         JIRA_USER_EMAIL: soumensahu2011@gmail.com
-        JIRA_API_TOKEN: ShTMxrsZ2Z89bOfE0PxRE745
+        JIRA_API_TOKEN: fIWs05ewWq2lvAhQ5lOL9799
     - name: Comment on issue
       uses: atlassian/gajira-comment@master
       with:
