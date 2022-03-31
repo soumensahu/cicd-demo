@@ -29,9 +29,4 @@ jobs:
       env:
         JIRA_BASE_URL: https://soumensahu.atlassian.net
         JIRA_USER_EMAIL: soumensahu2011@gmail.com
-        JIRA_API_TOKEN: AcISaKkGSDurrmgYBv7PF979
-    - name: Comment on issue
-      uses: atlassian/gajira-comment@master
-      with:
-        issue: JENKINS1-1
-        comment: ${{ github.event.pusher.name }} pushed to repository, comment from github action
+        JIRA_API_TOKEN: oXSsiKNQ2K6L7TqGbgM8256D
